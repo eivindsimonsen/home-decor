@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/grunge.jpg);
+  width: 100%;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  background-color: #f2f2f2;
+  color: #404040;
+  transform: rotate(-2deg);
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid #f2f2f2;
+}
+
+.navbar-brand:hover {
+  background-color: #404040;
+  color: #f2f2f2;
+  cursor: pointer;
+  border: 1px solid #f2f2f2;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  background-color: #f2f2f2;
+  max-width: 1600px;
+  margin: 0px auto;
+}
+
+header {
+  background-color: #404040;
+}
+
+.navbar {
+  padding: 20px;
+}
+
+h1,
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #404040;
+}
+
+main > * {
+  display: flex;
+  justify-content: center;
+}
+
+.products > * {
+  margin: 20px;
+}
+
+.carousel-item > img {
+  height: 800px;
+}
+
+.btn-outline-success {
+  color: #404040;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.btn-outline-success:hover {
+  color: #f2f2f2;
+  background-color: #404040;
+  border: 1px solid #f2f2f2;
+}
+
+.btn-primary {
+  color: #f2f2f2;
+  background-color: #404040;
+}
+
+.btn-primary:hover {
+  color: #404040;
+  background-color: #f2f2f2;
+  border: 1px solid #404040;
+}
+
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #404040;
+  border-color: #404040;
+}
+
+.page-link,
+.page-link:hover {
+  color: #404040;
+}
