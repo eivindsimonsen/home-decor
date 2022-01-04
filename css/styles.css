@@ -9,6 +9,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.navbar {
+  padding: 20px;
+}
+
+.nav-section {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
 .navbar-brand {
   font-family: "EB Garamond", serif;
   font-size: 2rem;
@@ -39,10 +50,6 @@ body {
 
 header {
   background-color: #404040;
-}
-
-.navbar {
-  padding: 20px;
 }
 
 h1,
