@@ -10,19 +10,23 @@ body {
 }
 
 .navbar {
-  padding: 20px;
+  padding: 15px;
 }
 
-.nav-section {
+.nav-section a:hover {
+  color: #f2f2f2;
+  text-decoration: underline;
+}
+
+.nav-section a {
   color: #f2f2f2;
   text-decoration: none;
   font-size: 1.5rem;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .navbar-brand {
   font-family: "EB Garamond", serif;
-  font-size: 2rem;
   background-color: #f2f2f2;
   color: #404040;
   transform: rotate(-2deg);
@@ -33,10 +37,8 @@ body {
 }
 
 .navbar-brand:hover {
-  background-color: #404040;
-  color: #f2f2f2;
-  cursor: pointer;
-  border: 1px solid #f2f2f2;
+  color: #404040;
+  transform: rotate(-4deg);
 }
 
 .content {
@@ -44,8 +46,8 @@ body {
   grid-template-rows: auto 1fr auto;
   height: 100%;
   background-color: #f2f2f2;
-  max-width: 1600px;
   margin: 0px auto;
+  padding: 0px;
 }
 
 header {
@@ -62,14 +64,12 @@ footer {
 main > * {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .products > * {
   margin: 20px;
-}
-
-.carousel-item > img {
-  height: 800px;
 }
 
 .btn-outline-success {
@@ -104,4 +104,28 @@ main > * {
 .page-link,
 .page-link:hover {
   color: #404040;
+}
+
+.navbar-toggler-icon {
+  background-color: #f2f2f2;
+  display: flex;
+  color: #404040;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+#active {
+  text-decoration: underline;
+}
+
+@media (min-width: 1207px) {
+  main > * {
+    flex-direction: row;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
 }
